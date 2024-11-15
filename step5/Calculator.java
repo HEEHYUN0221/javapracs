@@ -4,16 +4,16 @@ public class Calculator {
     private int firstNumber;
     private int secondNumber;
 
-    private AbstractOperation operation;
+    private AbstractOpration operation;
 
-    public Calculator(AbstractOperation operation) {
+    public Calculator(AbstractOpration operation) {
         this.operation = operation;
     }
 
     public Calculator() {
     }
 
-    public void setOperation(AbstractOperation operation) {
+    public void setOperation(AbstractOpration operation) {
         this.operation = operation;
     }
 
@@ -27,7 +27,7 @@ public class Calculator {
 
     public double calculate() {
         double answer = 0;
-        answer = operation.operate(this.firstNumber, this.secondNumber);
+        answer = operation.oprate(this.firstNumber, this.secondNumber);
         return answer;
     }
 }
