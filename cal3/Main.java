@@ -2,7 +2,7 @@ package questcal.cal3;
 
 import java.util.Scanner;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
         ArithmeticCalculator cal = new ArithmeticCalculator();
         double result = 0;
