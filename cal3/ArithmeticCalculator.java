@@ -8,7 +8,7 @@ public class ArithmeticCalculator {
     private final Queue<String> saveData = new LinkedList<>();
     private double result;
 
-    public double calculate(String opr, double a, double b) {
+    public <T extends Number>double calculate(String opr, T a, T b) {
         System.out.println("연산 : " + a + opr + b);
 
         OperatorType operator = null;
@@ -21,7 +21,7 @@ public class ArithmeticCalculator {
         }
 
         if(operator!=null){
-            result = operator.operate(a,b);
+            result = operator.operate(a.doubleValue(),b.doubleValue());
             return result;
         }
         else {
@@ -51,5 +51,10 @@ public class ArithmeticCalculator {
     public void setSaveData(String opr, double a, double b) {
         saveData.offer(+a + opr + b + "=" + result);
         System.out.println("결과가 저장되었습니다.");
+    }
+
+    public double biggerSaveData(double a){
+        //큐에 저장되어있는 값보다 더 큰값을 내보내야하고, 여기서 스트림을 사용해야함!
+        return a;
     }
 }
