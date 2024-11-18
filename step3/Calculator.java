@@ -4,11 +4,7 @@ public class Calculator {
     private String operator;
     private int firstNumber;
     private int secondNumber;
-    
-    SubstractOperation substractOperation=new SubstractOperation();
-    MultiplyOperation multiplyOperation=new MultiplyOperation();
-    DivideOperation divideOperation=new DivideOperation();
-    
+
     public double calculate(String opr,int a, int b){
         System.out.println(opr);
         System.out.println(a);
