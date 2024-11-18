@@ -40,7 +40,7 @@
 
 * 제네릭 타입 : 'ArithmeticCalculator' 클래스는 피연산자를 여러 타입으로 받을 수 있도록 제네릭 타입으로 변경되었습니다. 이를 통해 다양한 데이터 타입에 대해 유연하게 계산을 수행할 수 있습니다.
 
-[cal3](https://github.com/HEEHYUN0221/javapracs/tree/main/cal3)
+[코드 보기 - cal3](https://github.com/HEEHYUN0221/javapracs/tree/main/cal3)
 
 - - -
 
@@ -54,7 +54,7 @@
 
 * 오류 처리 : 잘못된 연산자가 입력되었을 경우 "Invalid operator"라는 메시지를 출력합니다.
 
-[step3](https://github.com/HEEHYUN0221/javapracs/tree/main/step3)
+[코드 보기 - step3](https://github.com/HEEHYUN0221/javapracs/tree/main/step3)
 
 - - -
 
@@ -66,7 +66,7 @@
 
 * 코드 간소화 : 이전 버전에서는 각 연산마다 조건문(if-else)으로 처리했으나, 이번 버전에서는 추상 클래스와 다형성을 활용하여 이러한 조건문을 제거했습니다. 각 연산은 해당 연산에 맞는 클래스를 인스턴스화하여 처리되므로 코드가 훨씬 간결해졌습니다.
 
-[step4](https://github.com/HEEHYUN0221/javapracs/tree/main/step4)
+[코드 보기 - step4](https://github.com/HEEHYUN0221/javapracs/tree/main/step4)
 
 - - -
 
@@ -78,5 +78,5 @@
 
 * 입력값 검증 : Parser 클래스에서 사용자가 입력한 값이 올바른지 정규식을 통해 확인합니다. 사용자가 입력한 값이 올바르면 값들을 Calculator 객체에 설정하고 모든 입력이 완료되면 executeCalculator() 메소드를 통해 계산을 실행합니다. 해당 메소드는 내부적으로 Calculator 객체의 calculate() 메소드를 호출하여 결과값을 반환합니다.
 
-[step5](https://github.com/HEEHYUN0221/javapracs/tree/main/step5)
+[코드 보기 - step5](https://github.com/HEEHYUN0221/javapracs/tree/main/step5)
 
