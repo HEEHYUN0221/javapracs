@@ -16,7 +16,7 @@
 
 * cal1을 발전 시켜 객체 지향적으로 작성한 계산기 코드입니다.
 
-<[cal2](https://github.com/HEEHYUN0221/javapracs/tree/main/cal2)>
+[cal2](https://github.com/HEEHYUN0221/javapracs/tree/main/cal2)
 
 - - -
 
