@@ -1,4 +1,4 @@
-package questcal.questkiosk.s1;
+package questcal.questkiosk.s2;
 
 public class MenuItem {
     private String menuName;
