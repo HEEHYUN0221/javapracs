@@ -92,8 +92,9 @@
 
 - - - 
 
-### 1. 첫번째 키오스크
 
+<details>
+    <summary>### 1. 첫번째 키오스크</summary>
 * 햄버거 메뉴 출력
 
 * 사용자 입력 처리(숫자 입력)
@@ -121,6 +122,9 @@ classDiagram
 
     KioskMain --> MenuItem : "사용"
 mermaid```
+
+</details>
+
 
 - - -
 
