@@ -87,6 +87,10 @@
 
 ## Kiosk 만들기
 
+이 프로젝트는 간단한 키오스크 애플리케이션으로, 사용자가 메뉴를 선택하고 장바구니에 담아 주문을 완료할 수 있는 기능을 제공합니다. 메뉴는 상위 카테고리(예: 햄버거, 음료, 디저트)와 하위 카테고리(각 메뉴 아이템)로 구성되어 있으며, 사용자는 원하는 메뉴를 선택해 장바구니에 담고 결제 금액을 확인할 수 있습니다.
+
+<details>
+    <summary>자세히</summary>
 
 ### 1. 첫번째 키오스크
 * 햄버거 메뉴 출력
@@ -199,3 +203,52 @@ classDiagram
 [코드 보기 -kiosk-3](https://github.com/HEEHYUN0221/javapracs/tree/main/questkiosk/s4)
     
 
+### 4. 네번째 키오스크
+
+* 장바구니 기능 추가 : 장바구니에 담긴 항목과 총 금액을 확인할 수 있습니다.
+
+* 주문 기능 : 주문을 하면 총 금액을 출력하고, 주문 완료시 장바구니를 초기화합니다.
+
+```mermaid
+classDiagram
+    class Kiosk {
+        - List~Menu~ menus
+        - Basket basket
+        + Kiosk(Menu menus)
+        + addMenu(Menu menus)
+        + start()
+    }
+
+    class Menu {
+        - String category
+        - List~MenuItem~ menus
+        + Menu(String category, List~MenuItem~ menuItem)
+        + printMenus()
+        + getCategory() : String
+        + getMenus() : List~MenuItem~
+    }
+
+    class MenuItem {
+        - String menuName
+        - double menuPrice
+        - String menuDescription
+        + MenuItem(String menuName, double menuPrice, String menuDescription)
+        + getMenuName() : String
+        + getMenuPrice() : double
+    }
+
+    class Basket {
+        - HashMap~MenuItem, Integer~ mapList
+        + Basket()
+        + addBasket(MenuItem selectItem)
+        + calAmount() : double
+        + allRemoveBasket()
+    }
+
+    Kiosk "1" --> "*" Menu
+    Menu "1" --> "*" MenuItem
+    Kiosk "1" --> "1" Basket
+
+````
+
+</details>
