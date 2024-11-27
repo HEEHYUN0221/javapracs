@@ -93,8 +93,7 @@
 - - - 
 
 
-<details>
-    <summary>### 1. 첫번째 키오스크</summary>
+### 1. 첫번째 키오스크
 * 햄버거 메뉴 출력
 
 * 사용자 입력 처리(숫자 입력)
@@ -104,6 +103,7 @@
 * 0을 입력하면 프로그램 종료
 
 [코드 보기 - kiosk-1](https://github.com/HEEHYUN0221/javapracs/tree/main/questkiosk/s1)
+
 
   
 ```mermaid
@@ -123,7 +123,7 @@ classDiagram
     KioskMain --> MenuItem : "사용"
 mermaid```
 
-</details>
+
 
 
 - - -
@@ -133,6 +133,8 @@ mermaid```
 * 메뉴 데이터 초기화 : KioskMain 클래스에서 MenuItem 객체를 생성하고 리스트에 추가합니다, 메뉴 리스트는 Kiosk 클래스에 전달 됩니다.
 
 * 키오스크 실행 : Kiosk 클래스는 전달 받은 메뉴 리스트를 출력하고 사용자 입력을 처리합니다.
+
+
 
 ```mermaid
 classDiagram
@@ -158,11 +160,14 @@ classDiagram
     Kiosk --> MenuItem : "사용"
 mermaid```
 
+
+
 [코드 보기 - kiosk-2](https://github.com/HEEHYUN0221/javapracs/tree/main/questkiosk/s3)
 
 ### 3. 세번째 키오스크
 
 * 카테고리 기능 : 다양한 메뉴 카테고리 관리, 카테고리별로 하위 메뉴를 출력 및 선택 가능
+
 
 ```mermaid
 classDiagram
@@ -193,6 +198,8 @@ classDiagram
     Kiosk --> Menu : "사용"
     Menu --> MenuItem : "포함"
 mermaid```
+
+
 
 [코드 보기 -kiosk-3](https://github.com/HEEHYUN0221/javapracs/tree/main/questkiosk/s4)
     
