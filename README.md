@@ -87,11 +87,6 @@
 
 ## Kiosk 만들기
 
-<details>
-    <summary>자세히</summary>
-
-- - - 
-
 
 ### 1. 첫번째 키오스크
 * 햄버거 메뉴 출력
@@ -204,4 +199,3 @@ mermaid```
 [코드 보기 -kiosk-3](https://github.com/HEEHYUN0221/javapracs/tree/main/questkiosk/s4)
     
 
-    </details>
