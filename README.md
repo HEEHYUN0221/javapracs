@@ -102,6 +102,8 @@
 
 * 0을 입력하면 프로그램 종료
 
+  
+```mermaid
 classDiagram
     class KioskMain {
         +main(String[] args) void
@@ -116,6 +118,7 @@ classDiagram
     }
 
     KioskMain --> MenuItem : "사용"
+mermaid```
 
     
 
