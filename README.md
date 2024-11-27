@@ -1,4 +1,4 @@
-# 계산기 만들기
+## 계산기 만들기
 <details>
     <summary>자세히</summary>
   
@@ -84,3 +84,39 @@
 [코드 보기 - step5](https://github.com/HEEHYUN0221/javapracs/tree/main/step5)
 
 </details>
+
+## Kiosk 만들기
+
+<details>
+    <summary>자세히</summary>
+
+- - - 
+
+### 1. 첫번째 키오스크
+
+* 햄버거 메뉴 출력
+
+* 사용자 입력 처리(숫자 입력)
+
+* 잘못된 입력에 대한 예외 처리 : 숫자가 아닌 값을 입력했을 때 'InputMismatchException' 처리, 메뉴 번호 범위(0-4)를 벗어난 값을 입력했을 때 메시지 출력
+
+* 0을 입력하면 프로그램 종료
+
+classDiagram
+    class KioskMain {
+        +main(String[] args) void
+    }
+
+    class MenuItem {
+        -String menuName
+        -double menuPrice
+        -String menuDescription
+        +MenuItem(String menuName, double menuPrice, String menuDescription)
+        +toString() String
+    }
+
+    KioskMain --> MenuItem : "사용"
+
+    
+
+    </details>
