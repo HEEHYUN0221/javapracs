@@ -1,4 +1,7 @@
 # 계산기 만들기
+<details>
+    <summary>자세히</summary>
+  
 - - -
 ### 1. 첫번째 계산기 (절차지향)
 
@@ -80,3 +83,4 @@
 
 [코드 보기 - step5](https://github.com/HEEHYUN0221/javapracs/tree/main/step5)
 
+</details>
