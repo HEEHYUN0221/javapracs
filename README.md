@@ -116,7 +116,7 @@ classDiagram
     }
 
     KioskMain --> MenuItem : "사용"
-mermaid```
+ ````
 
 
 
@@ -153,7 +153,7 @@ classDiagram
 
     KioskMain --> Kiosk : "사용"
     Kiosk --> MenuItem : "사용"
-mermaid```
+ ````
 
 
 
@@ -192,7 +192,7 @@ classDiagram
 
     Kiosk --> Menu : "사용"
     Menu --> MenuItem : "포함"
-mermaid```
+ ````
 
 
 
