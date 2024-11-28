@@ -11,7 +11,7 @@ public class KioskMain {
          *  */
 
         Scanner scanner = new Scanner(System.in);
-        while(true) {
+        while (true) {
             try {
                 MenuItem menuShackBurger = new MenuItem("ShackBurger", 6.9, "토마토, 양상추, 쉑소스가 토핑된 치즈버거");
                 MenuItem menuSmokeShack = new MenuItem("SmokeShack", 8.9, "베이컨, 체리 페퍼에 쉑소스가 토핑된 치즈버거");
@@ -24,11 +24,29 @@ public class KioskMain {
                 System.out.println("3. " + menuCheeseburger);
                 System.out.println("4. " + menuHamburger);
                 System.out.println("0. 종료      | 종료");
+
                 int inputMenuNumber = scanner.nextInt();
-                if (inputMenuNumber==0) break;
-                if (inputMenuNumber<0||inputMenuNumber>4){
-                    System.out.println("잘못된 입력입니다. 범위 내의 메뉴를 입력해주세요.");
+
+                if (inputMenuNumber == 0) {
+                    System.out.println("종료");
+                    break;
                 }
+
+                switch (inputMenuNumber) {
+                    case 1:
+                        System.out.println("1. " + menuShackBurger);
+                        break;
+                    case 2:
+                        System.out.println("2. " + menuSmokeShack);
+                        break;
+                    case 3:
+                        System.out.println("3. " + menuCheeseburger);
+                        break;
+                    case 4:
+                        System.out.println("4. " + menuHamburger);
+                        break;
+                }
+
 
             } catch (InputMismatchException e) {
                 System.out.println("잘못된 입력입니다. 숫자를 입력해주세요.");
