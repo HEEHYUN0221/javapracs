@@ -5,29 +5,29 @@ import java.util.Map;
 
 public class Basket {
     //메뉴이름, 수량, 가격
-    private HashMap<MenuItem, Integer> mapList;
+    private final HashMap<MenuItem, Integer> mapList;
 
     public Basket() {
-        this.mapList=new HashMap<>();
+        this.mapList = new HashMap<>();
     }
 
     public void addBasket(MenuItem selectItem) {
-        if(mapList.containsKey(selectItem)){
-            int tempValue = mapList.get(selectItem) +1;
-            mapList.replace(selectItem,tempValue);
+        if (mapList.containsKey(selectItem)) {
+            int tempValue = mapList.get(selectItem) + 1;
+            mapList.replace(selectItem, tempValue);
         } else {
-            mapList.put(selectItem,1);
+            mapList.put(selectItem, 1);
         }
     }
 
     //총 금액 계산
-    public double calAmount(){
+    public double calAmount() {
         double sumanswer = 0;
-        for(Map.Entry<MenuItem, Integer> entry : mapList.entrySet()){
+        for (Map.Entry<MenuItem, Integer> entry : mapList.entrySet()) {
             MenuItem item = entry.getKey();
             int quantity = entry.getValue();
 
-            sumanswer += (item.getMenuPrice()*1000)*quantity;
+            sumanswer += (item.getMenuPrice() * 1000) * quantity;
         }
 
         return sumanswer;
@@ -35,19 +35,19 @@ public class Basket {
 
     @Override
     public String toString() {
-        if(mapList==null|| mapList.isEmpty()) {
-            return "장바구니가 비어있스미나.";
+        if (mapList == null || mapList.isEmpty()) {
+            return "장바구니가 비어있습니다.";
         }
 
         StringBuilder sb = new StringBuilder();
         sb.append("장바구니 목록 : \n");
-        for(Map.Entry<MenuItem, Integer> entry : mapList.entrySet()){
+        for (Map.Entry<MenuItem, Integer> entry : mapList.entrySet()) {
             MenuItem item = entry.getKey();
             int quantity = entry.getValue();
             sb.append("이름 : ");
             sb.append(item.getMenuName());
             sb.append(", 가격 : ");
-            sb.append(item.getMenuPrice()*1000);
+            sb.append(item.getMenuPrice() * 1000);
             sb.append("원 , 수량 : ");
             sb.append(quantity);
             sb.append("\n");
@@ -58,7 +58,7 @@ public class Basket {
     }
 
     public void allRemoveBasket() {
-        //장바구니 싹싹 비우기
         mapList.clear();
     }
+
 }
